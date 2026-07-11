@@ -1,0 +1,39 @@
+# ==========================
+# Python
+# ==========================
+__pycache__/
+*.py[cod]
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# VS Code
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# ==========================
+# Model IndoBERT
+# ==========================
+model.safetensors
+training_args.bin
+config.json
+tokenizer.json
+tokenizer_config.json
+special_tokens_map.json
+vocab.txt
+
+# Jika nanti model dipindah ke folder
+indobert_grok_model/
+
+# ==========================
+# Download sementara
+# ==========================
+*.zip
+*.part
