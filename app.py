@@ -825,7 +825,7 @@ with st.sidebar:
 MODEL_DIR = "indobert_grok_model"
 ZIP_FILE = "indobert_grok_model.zip"
 
-FILE_ID = "116Y_cbOCNrqRgPPwuFJOFSoCnY6BeR8T"
+FILE_ID = "1lSPGWRuBGRrL6UvKHfCnWqNU2JbBfVXD"
 
 URL = f"https://drive.google.com/uc?id={FILE_ID}"
 
