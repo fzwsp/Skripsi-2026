@@ -570,6 +570,7 @@ def siapkan_data_exploded(df, kolom_kategori, fungsi_deteksi):
 
 # Fungsi menghitung persentase kategori
 def hitung_persen_kategori(df_exploded, kolom_kategori):
+    df_exploded = df_exploded.reset_index(drop=True)
     tabel_persen = pd.crosstab(
         df_exploded[kolom_kategori],
         df_exploded["label"],
