@@ -842,10 +842,10 @@ tokenizer   = None
 model       = None
 model_loaded = False
 
-if os.path.exists(model_path):
+if os.path.exists(MODEL_DIR):
     with st.spinner("Memuat model IndoBERT..."):
         try:
-            tokenizer, model = load_model(model_path)
+            tokenizer, model = load_model(MODEL_DIR)
             model_loaded = True
         except Exception as e:
             st.error(f"Gagal memuat model: {e}")
