@@ -796,7 +796,7 @@ with st.sidebar:
     st.markdown("---")
     st.markdown("**⚙️ Konfigurasi Model**")
     model_path = st.text_input(
-        "Path Model IndoBERT", value="indobert_grok_model",
+        "Path Model IndoBERT", value="indobert_copilot_model",
         help="Folder berisi: config.json, model.safetensors, tokenizer.json"
     )
 
@@ -804,7 +804,7 @@ with st.sidebar:
     st.markdown("**📊 Pilih Dataset**")
     selected_app = st.selectbox(
         "Dataset yang ditampilkan di Visualisasi",
-        options=AI_APPS, index=2,
+        options=AI_APPS, index=3,
         help="Pilih salah satu dari 5 dataset untuk dilihat detailnya."
     )
 
@@ -813,7 +813,7 @@ with st.sidebar:
     <div style='font-size:0.78rem;color:#475569;'>
     <b style='color:#6366f1'>Model:</b> IndoBERT Fine-tuned<br>
     <b style='color:#6366f1'>Label:</b> Positif · Netral · Negatif<br>
-    <b style='color:#6366f1'>Dataset Latih:</b> Grok Reviews<br>
+    <b style='color:#6366f1'>Dataset Latih:</b> Copilot Reviews<br>
     <b style='color:#6366f1'>Bahasa:</b> Indonesia
     </div>
     """, unsafe_allow_html=True)
@@ -822,10 +822,10 @@ with st.sidebar:
 # ---- Bagian 8 : Memuat Model dan Dataset ----
 # ---- Download Model dari Google Drive ----
 
-MODEL_DIR = "indobert_grok_model"
-ZIP_FILE = "indobert_grok_model.zip"
+MODEL_DIR = "indobert_copilot_model"
+ZIP_FILE = "indobert_copilot_model.zip"
 
-FILE_ID = "1lSPGWRuBGRrL6UvKHfCnWqNU2JbBfVXD"
+FILE_ID = "1HghcauQXhfARgHeUl95fPbB6qL6culh9"
 
 URL = f"https://drive.google.com/uc?id={FILE_ID}"
 
@@ -903,7 +903,7 @@ with tab1:
                 st.session_state["contoh_teks"] = ""
                 st.rerun()
 
-        st.markdown("<div class='upload-hint'>💡 Gunakan ulasan Bahasa Indonesia untuk hasil optimal. Model dilatih pada data ulasan aplikasi Grok dari Google Play Store.</div>", unsafe_allow_html=True)
+        st.markdown("<div class='upload-hint'>💡 Gunakan ulasan Bahasa Indonesia untuk hasil optimal. Model dilatih pada data ulasan aplikasi Copilot dari Google Play Store.</div>", unsafe_allow_html=True)
 
         st.markdown("<div class='section-header' style='font-size:1rem;'>Contoh Teks</div>", unsafe_allow_html=True)
 
@@ -1095,7 +1095,7 @@ with tab3:
     col_upload, col_format = st.columns([2, 1])
     with col_upload:
         uploaded_file      = st.file_uploader("Upload CSV Dataset", type=["csv"], label_visibility="collapsed")
-        selected_app_batch = st.selectbox("Tandai sebagai dataset dari AI App:", options=AI_APPS, index=2)
+        selected_app_batch = st.selectbox("Tandai sebagai dataset dari AI App:", options=AI_APPS, index=3)
     with col_format:
         st.markdown("""
         <div class='metric-card' style='margin-top:0.5rem;'>
