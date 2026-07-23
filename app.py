@@ -909,7 +909,7 @@ with tab1:
 
         contoh_teks_map = {
             "😊 Positif": "Fiturnya sangat canggih dan membantu pekerjaan sehari-hari, respon cepat!",
-            "😐 Netral":  "Aplikasinya biasa saja, tidak terlalu spesial tapi cukup untuk kebutuhan dasar.",
+            "😐 Netral":  "Saya memasukkan beberapa pertanyaan ke dalam aplikasi ini.",
             "😠 Negatif": "Aplikasi ini sangat lemot dan sering crash, sangat mengecewakan!",
         }
 
